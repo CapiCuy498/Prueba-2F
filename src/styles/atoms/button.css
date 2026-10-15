@@ -1,0 +1,14 @@
+.btn-cine {
+  background: var(--wine);
+  color: var(--ink);
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-cine:hover,
+.btn-cine:focus-visible {
+  background: var(--wine-light);
+  color: var(--ink);
+}

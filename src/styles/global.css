@@ -1,0 +1,66 @@
+:root {
+  --bg: #15130f;
+  --surface: #1f1b15;
+  --surface-2: #262019;
+  --ink: #ede6d8;
+  --ink-muted: #a79c89;
+  --gold: #c9a24b;
+  --wine: #7a2331;
+  --wine-light: #9c3a49;
+  --line: #33291d;
+  --font-display: 'Bodoni Moda', serif;
+  --font-body: 'Work Sans', sans-serif;
+}
+
+[data-bs-theme='dark'] {
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--ink);
+  --bs-body-font-family: var(--font-body);
+  --bs-border-color: var(--line);
+  --bs-secondary-color: var(--ink-muted);
+  --bs-link-color-rgb: 201, 162, 75;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+
+.form-control {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 6px;
+  padding: 0.7rem 0.9rem;
+}
+
+.form-control:focus {
+  background: var(--surface-2);
+  color: var(--ink);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.2rem rgba(201, 162, 75, 0.2);
+}
+
+.form-control.is-invalid {
+  border-color: var(--wine-light);
+  background-image: none;
+}
+
+.form-label,
+.form-text {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}

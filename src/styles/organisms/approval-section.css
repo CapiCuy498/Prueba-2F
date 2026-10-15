@@ -1,0 +1,5 @@
+.approval-section {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-top: 2rem;
+}
