@@ -1,0 +1,136 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080b15;
+  color: white;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+  background:
+    radial-gradient(circle at 15% 20%, #43152e, transparent 40%),
+    radial-gradient(circle at 85% 80%, #15274a, transparent 40%),
+    #080b15;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 38px;
+  background: #171e30;
+  border: 1px solid #354158;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.logo-space {
+  color: #fb7185;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.auth-card h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aeb8cc;
+  margin-bottom: 30px;
+}
+
+.auth-card .form-label {
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+.auth-card .form-control {
+  background: #0d1424;
+  color: white;
+  border: 1px solid #465169;
+  padding: 12px;
+}
+
+.auth-card .form-control::placeholder {
+  color: #94a3b8;
+}
+
+.auth-card .form-control:focus {
+  background: #0d1424;
+  color: white;
+  border-color: #fb7185;
+  box-shadow: 0 0 0 3px rgba(251, 113, 133, 0.15);
+}
+
+.btn-mostrar {
+  background: #293349;
+  border: 1px solid #465169;
+  color: white;
+}
+
+.btn-mostrar:hover {
+  background: #3d4962;
+  color: white;
+}
+
+.btn-space {
+  background: #e11d48;
+  border: 1px solid #e11d48;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-space:hover {
+  background: #be123c;
+  border-color: #be123c;
+  color: white;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #cbd5e1;
+}
+
+.auth-link a {
+  color: #fda4af;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.demo-text {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 25px 20px;
+  }
+
+  .logo-space {
+    font-size: 23px;
+  }
+}
