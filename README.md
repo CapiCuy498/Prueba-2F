@@ -1,27 +1,16 @@
-# SpaceMovie
+# React + Vite
 
-React + Vite + Bootstrap, organizado con Atomic Design.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Cómo ejecutarlo en VS Code
+Currently, two official plugins are available:
 
-1. Abre la carpeta del proyecto en VS Code.
-2. Abre la terminal (Ctrl + ñ) e instala las dependencias:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-   npm install
+## React Compiler
 
-3. Inicia el servidor de desarrollo:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-   npm run dev
+## Expanding the ESLint configuration
 
-4. Abre el enlace que aparece (normalmente http://localhost:5173).
-   Para cambiar de película usa `/?id=1` o `/?id=2`.
-
-## Estructura
-
-- `src/components/atoms`: piezas mínimas (Text, Image, Button, Input, TextArea, Icon)
-- `src/components/molecules`: combinaciones de átomos (FormField, ApprovalBadge, ReviewCard, NavLinks, InfoItem, FooterColumn)
-- `src/components/organisms`: secciones completas (Header, MovieDetails, ApprovalSection, ReviewList, ReviewForm, Footer)
-- `src/pages`: páginas que juntan los organismos
-- `src/data`: datos de las películas y del sitio
-- `src/utils`: lógica reutilizable (película según la URL, filtro de reseñas)
-- `src/styles`: CSS por componente, más `global.css` con la paleta y ajustes de Bootstrap
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
