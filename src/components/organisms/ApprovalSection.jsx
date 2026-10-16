@@ -1,5 +1,4 @@
 import { ApprovalBadge } from '../molecules/ApprovalBadge'
-import '../../styles/organisms/approval-section.css'
 
 export function ApprovalSection({ publico, critica }) {
   return (

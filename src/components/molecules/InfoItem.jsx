@@ -1,5 +1,4 @@
 import { Text } from '../atoms/Text'
-import '../../styles/molecules/info-item.css'
 
 export function InfoItem({ label, value }) {
   return (

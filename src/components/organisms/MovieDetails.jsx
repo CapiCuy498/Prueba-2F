@@ -1,7 +1,6 @@
 import { Image } from '../atoms/Image'
 import { Text } from '../atoms/Text'
 import { InfoItem } from '../molecules/InfoItem'
-import '../../styles/organisms/movie-details.css'
 
 export function MovieDetails({ pelicula }) {
   return (

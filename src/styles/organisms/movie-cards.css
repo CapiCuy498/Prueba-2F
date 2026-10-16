@@ -1,4 +1,4 @@
-.container {
+.movies-page {
   width: 100%;
   min-height: 100vh;
   background-color: #0e0d12;
@@ -18,7 +18,7 @@
   .movie-cards {
     grid-template-columns: 1fr;
   }
-  .card img {
+  .movie-card img {
     height: auto;
   }
 }

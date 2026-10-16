@@ -1,4 +1,4 @@
-.card {
+.movie-card {
   position: relative;
   color: #fff;
   border-radius: 5px;
@@ -7,10 +7,10 @@
   aspect-ratio: 2 / 3;
 }
 
-.card:hover img {
+.movie-card:hover img {
   transform: scale(1.05);
 }
 
-.card:hover .card-content {
+.movie-card:hover .card-content {
   opacity: 1;
 }

@@ -1,5 +1,5 @@
 // src/components/molecules/MovieInfo.jsx
-import Title from '../atoms/title'
+import Title from '../atoms/Title'
 import Rating from '../atoms/Rating'
 import Description from '../atoms/Description'
 

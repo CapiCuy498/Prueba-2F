@@ -40,7 +40,7 @@ function Login() {
       JSON.stringify(usuario)
     );
 
-    navigate("/bienvenida");
+    navigate("/");
   }
 
   return (

@@ -1,4 +1,4 @@
 function Description({ children }) {
-  return <p className="movie-desc">{children}</p>
+  return <p className="short-desc">{children}</p>
 }
 export default Description

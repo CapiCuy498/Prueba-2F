@@ -1,6 +1,5 @@
 import { Text } from '../atoms/Text'
 import { FooterColumn } from '../molecules/FooterColumn'
-import '../../styles/organisms/footer.css'
 
 export function Footer({ sitio, enlaces }) {
   return (
@@ -12,7 +11,7 @@ export function Footer({ sitio, enlaces }) {
             <Text className="footer-description">{sitio.descripcion}</Text>
           </div>
           <div className="col-6 col-md-2">
-            <FooterColumn title="Explorar" items={enlaces} />
+            <FooterColumn title="Explorar" items={[{ label: "Inicio", to: "/" }, { label: "Iniciar sesión", to: "/login" }, { label: "Registrarse", to: "/registro" }, ...enlaces]} />
           </div>
           <div className="col-6 col-md-2">
             <FooterColumn

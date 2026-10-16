@@ -5,7 +5,7 @@ import MovieInfo from '../molecules/MovieInfo'
 
 function MovieCard({ id, poster, title, score, year, duration, description }) {
   return (
-    <div className="card">
+    <div className="movie-card">
       <Link to={`/sinopsis/${id}`}>
         <Image src={poster} alt={title} className="poster" />
         <MovieInfo

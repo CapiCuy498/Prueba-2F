@@ -1,11 +1,22 @@
-import { movies } from '../data/movies'   
+import { useEffect } from 'react'
+import { movies } from '../data/movies'
+import { sitio } from '../data/sitio'
+import { Header } from '../components/organisms/Header'
+import { Footer } from '../components/organisms/Footer'
 import MovieCards from '../components/organisms/MovieCards'
-import '../styles/i.css'
 
 function Home() {
+  useEffect(() => {
+    document.title = `Inicio | ${sitio.nombre}`
+  }, [])
+
   return (
-    <div className="container">
-      <MovieCards movies={movies} />
+    <div className="d-flex flex-column min-vh-100">
+      <Header nombre={sitio.nombre} />
+      <main className="movies-page">
+        <MovieCards movies={movies} />
+      </main>
+      <Footer sitio={sitio} enlaces={[]} />
     </div>
   )
 }

@@ -1,21 +1,15 @@
 import { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import { ApprovalSection } from '../components/organisms/ApprovalSection'
 import { Footer } from '../components/organisms/Footer'
 import { Header } from '../components/organisms/Header'
 import { MovieDetails } from '../components/organisms/MovieDetails'
 import { ReviewForm } from '../components/organisms/ReviewForm'
 import { ReviewList } from '../components/organisms/ReviewList'
-import { peliculas } from '../data/peliculas'
 import { sitio } from '../data/sitio'
-import { obtenerPeliculaActual } from '../utils/obtenerPelicula'
+import { obtenerPeliculaPorId } from '../utils/obtenerPelicula'
 
-const enlacesPeliculas = peliculas.map((pelicula) => ({
-  label: pelicula.titulo,
-  href: `/?id=${pelicula.id}`,
-}))
-
-export function SinopsisPage() {
-  const [pelicula] = useState(obtenerPeliculaActual)
+function SinopsisContenido({ pelicula }) {
   const [resenas, setResenas] = useState(pelicula.resenas)
 
   useEffect(() => {
@@ -27,15 +21,32 @@ export function SinopsisPage() {
   }
 
   return (
+    <main>
+      <MovieDetails pelicula={pelicula} />
+      <ApprovalSection publico={pelicula.aprobacionPublico} critica={pelicula.aprobacionCritica} />
+      <ReviewList resenas={resenas} />
+      <ReviewForm onPublicar={publicarResena} />
+    </main>
+  )
+}
+
+export function SinopsisPage() {
+  const { id } = useParams()
+  const pelicula = obtenerPeliculaPorId(id)
+
+  return (
     <div className="d-flex flex-column min-vh-100">
-      <Header nombre={sitio.nombre} enlaces={enlacesPeliculas} />
-      <main>
-        <MovieDetails pelicula={pelicula} />
-        <ApprovalSection publico={pelicula.aprobacionPublico} critica={pelicula.aprobacionCritica} />
-        <ReviewList resenas={resenas} />
-        <ReviewForm onPublicar={publicarResena} />
-      </main>
-      <Footer sitio={sitio} enlaces={enlacesPeliculas} />
+      <Header nombre={sitio.nombre} />
+      {pelicula ? (
+        // key: reinicia las reseñas al cambiar de película
+        <SinopsisContenido key={pelicula.id} pelicula={pelicula} />
+      ) : (
+        <main className="container py-5 text-center">
+          <h1>Película no encontrada</h1>
+          <Link to="/" className="btn btn-cine mt-3">Volver al inicio</Link>
+        </main>
+      )}
+      <Footer sitio={sitio} enlaces={[]} />
     </div>
   )
 }

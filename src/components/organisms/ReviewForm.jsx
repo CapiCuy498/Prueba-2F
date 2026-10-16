@@ -5,7 +5,6 @@ import { Text } from '../atoms/Text'
 import { TextArea } from '../atoms/TextArea'
 import { FormField } from '../molecules/FormField'
 import { validarResena } from '../../utils/filtroResenas'
-import '../../styles/organisms/review-form.css'
 
 const FORMULARIO_VACIO = { autor: '', texto: '' }
 
