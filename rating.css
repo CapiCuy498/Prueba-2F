@@ -1,0 +1,11 @@
+.info {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.info .fa-solid,
+.info .fa-star {
+  color: #fff;
+}

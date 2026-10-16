@@ -1,0 +1,29 @@
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  z-index: 10;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.brand:hover {
+  color: var(--gold);
+}
+
+.site-header .nav-link {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  padding: 0 0 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus-visible {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
