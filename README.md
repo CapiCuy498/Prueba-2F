@@ -22,3 +22,30 @@ Se usan Vitest y React Testing Library. Hay 3 pruebas por cada componente de `sr
 - `npm test`: ejecuta todas las pruebas una vez.
 - `npm run test:watch`: las vuelve a ejecutar al guardar cambios.
 - `npm run test:coverage`: ejecuta las pruebas y muestra el porcentaje de código cubierto.
+
+
+## Subir tus archivos a git
+
+
+git clone https://github.com/CapiCuy498/Prueba-2F.git
+
+para copiar el repositorio y traer lo que contiene 
+
+despues hacer un 
+
+git pull origin main
+
+para asegurarsede traer todo
+
+despues envias los archivos nuevos y los pegas 
+
+para guardar se hace primero un
+
+git add .
+
+despues
+
+git commit -m "mensaje que quieras ponerle al cambio"
+y por ultimo 
+
+git push origin main
