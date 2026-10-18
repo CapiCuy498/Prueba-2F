@@ -37,7 +37,7 @@ git pull origin main
 
 para asegurarsede traer todo
 
-despues envias los archivos nuevos y los pegas 
+despues envias los archivos nuevos a la carpeta  y los pegas 
 
 para guardar se hace primero un
 
