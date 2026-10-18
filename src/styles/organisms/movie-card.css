@@ -1,0 +1,16 @@
+.movie-card {
+  position: relative;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 2 / 3;
+}
+
+.movie-card:hover img {
+  transform: scale(1.05);
+}
+
+.movie-card:hover .card-content {
+  opacity: 1;
+}

@@ -1,0 +1,38 @@
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
+.footer-brand {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+.footer-description {
+  max-width: 32ch;
+  margin: 0;
+}
+
+.footer-column-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.footer-column a {
+  color: var(--ink-muted);
+}
+
+.footer-column a:hover {
+  color: var(--gold);
+}
+
+.footer-copy {
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+}
