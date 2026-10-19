@@ -1,3 +1,5 @@
+import '../../styles/atoms/rating.css';
+
 function Rating({ score, year, duration }) {
   return (
     <h3 className="info">

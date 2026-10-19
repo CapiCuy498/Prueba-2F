@@ -1,6 +1,6 @@
 import { Text } from '../atoms/Text'
 import { FooterColumn } from '../molecules/FooterColumn'
-
+import '../../styles/organisms/footer.css';
 export function Footer({ sitio, enlaces }) {
   return (
     <footer className="site-footer mt-auto">

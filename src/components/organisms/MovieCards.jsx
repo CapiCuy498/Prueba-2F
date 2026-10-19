@@ -1,5 +1,5 @@
 import MovieCard from './MovieCard'
-
+import '../../styles/organisms/movie-cards.css';
 function MovieCards({ movies }) {
 
   return (

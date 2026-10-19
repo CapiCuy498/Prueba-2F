@@ -2,6 +2,7 @@
 import Title from '../atoms/Title'
 import Rating from '../atoms/Rating'
 import Description from '../atoms/Description'
+import '../../styles/molecules/movie-info.css';
 
 function MovieInfo({ title, score, year, duration, description }) {
   return (

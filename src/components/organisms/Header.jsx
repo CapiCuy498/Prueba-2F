@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { NavLinks } from '../molecules/NavLinks'
-
+import '../../styles/organisms/header.css';
 export function Header({ nombre }) {
   const navigate = useNavigate()
   const sesion = sessionStorage.getItem('spaceMovieDemo')

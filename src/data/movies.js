@@ -1,7 +1,7 @@
 export const movies = [
   {
     id: 1,
-    poster: '/images/COYOTE-VS.-ACME-–-ComediaAventura-copia.webp',
+    poster: '/images/descargar (9).webp',
     title: 'Coyote vs Acme',
     score: 82,
     year: 2025,

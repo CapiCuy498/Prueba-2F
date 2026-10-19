@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 import { Image } from '../atoms/Image'
 import MovieInfo from '../molecules/MovieInfo'
-
+import '../../styles/organisms/movie-card.css';
 function MovieCard({ id, poster, title, score, year, duration, description }) {
   return (
     <div className="movie-card">

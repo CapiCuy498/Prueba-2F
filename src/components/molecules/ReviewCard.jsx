@@ -1,5 +1,5 @@
 import { Text } from '../atoms/Text'
-
+import '../../styles/molecules/review-card.css';
 export function ReviewCard({ autor, texto }) {
   return (
     <article className="card review-card h-100">
